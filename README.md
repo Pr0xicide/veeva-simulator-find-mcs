@@ -23,29 +23,25 @@ Simply download the [find-veeva-mcs.sh](./find-veeva-mcs.sh) from this repo onto
 
 ![Safari Web Inspector](./assets/screenshot-safari-open-inspector.png)
 
-### HTML URL
+### HTML URL Link
 
-Once you have opened the web inspector in Safari, go to the Sources tab and **right click** on the HTML file and select `Copy Link` as shown in the screenshot below.
+Once you have opened the web inspector in **Safari**, go to the Sources tab and **right click** on the HTML file and select `Copy Link` as shown in the screenshot below.
 
 ![HTML URL location](./assets/screenshot-slide-HTML-URL.png)
 
 ### Terminal
 
-Now in your terminal, run the following command and paste in the `{HTML_URL}` from the previous step:
+Now in your terminal, run the following command and paste in the `{URL}` from the previous step:
 
 ```bash
-sh find-veeva-mcs.sh {HTML_URL}
+sh find-veeva-mcs.sh {URL}
 ```
 
-The output will provide you the path containing all the files for the slide for you to modify.
+The bash script will open the directory in Finder that contains all the files for the slide for you to modify locally.
 
-![MCS Directory location](./assets/screenshot-terminal-path.png)
+### Making Local Changes
 
-### Making Changes
-
-Once you have the path, open the directory in your favorite code editor and make the changes you need.
-
-![MCS Files in Mac Finder](./assets/screenshot-mcs-files.png)
+Now open the directory in your favorite code editor and make the changes you need.
 
 **There is no live reloading when making changes**. Therefore, you will need to reload the slide in your iOS simulator. To do this you can reload the slide by clicking on the slide in the [navigation bar](https://crmhelp.veeva.com/doc/Content/CRM_topics/Multichannel/CLM/DefaultFunct/DisplayingPres/NavigateCLM.htm#UsingtheNavigationBar).
 
